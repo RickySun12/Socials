@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Anish</title> 
+    <style>
+      .drink{
+        width: 100px; 
+        background-color: red; 
+        color: beige; 
+        position: absolute; 
+        top:600px; 
+        left:200px; 
+        cursor: pointer;
+      }
+      .holder{
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        max-width: 1200px;
+      } 
+      .anish{
+        font-size: 70px; 
+      } 
+
+    </style>
+  </head>
+  <div class="holder">
+    <img class="anish" src="Anish.JPG">
+    <button class="drink" onclick="selectDrink()">
+        Socials shot selector!
+    </button>
+    <p class="anish">
+        Virtual Anish!
+    </p>
+</div>
+
+<script>
+    function selectDrink() {
+        let selector = Math.random();
+        console.log(selector);
+
+        if (selector < 1 / 12) {
+            alert('Lara Drink!');
+        } else if (selector < 2 / 12) {
+            alert('Sophie Drink!!!');
+        } else if (selector < 3 / 12) {
+            alert('Other indian man drink!');
+        } else if (selector < 4 / 12) {
+            alert('Lotus you look too sober');
+        } else if (selector < 5 / 12) {
+            alert('Robot Ricky!!');
+        } else if (selector < 6 / 12) {
+            alert('Chris Drink!');
+        } else if (selector < 7 / 12) {
+            alert('Jenifer Drink!');
+        } else if (selector < 8 / 12) {
+            alert('Susie Drink!');
+        } else if (selector < 9 / 12) {
+            alert('Ella Drink if you\'re here ;-; or :>');
+        } else if (selector < 10 / 12) {
+            alert('Davis Drink!');
+        } else if (selector < 11 / 12) {
+            alert('Sunny Drink! if you\'re here ;-; or :>');
+        } else {
+            alert('Anish Drink');
+        }
+    }
+</script>
+
+</body>
+</html>
